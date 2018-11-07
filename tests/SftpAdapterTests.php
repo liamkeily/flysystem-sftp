@@ -592,7 +592,7 @@ class SftpTests extends TestCase
      * @expectedException LogicException
      * @expectedExceptionMessage The authenticity of host example.org can't be established.
      */
-    public function testMisMatchingHostFingerprintAbortsLogin()
+    public function testMisMatchingHostFingerprintAbortsLogin ()
     {
         $adapter = new SftpAdapter([
             'host' => 'example.org',
